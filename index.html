@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=.6">
+
+    <link rel="stylesheet" href="css.css">
+    <title>Page Title</title>
+
+
+    <script src="horas.js"></script>
+
+</head>
+<style>
+    table,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+
+
+<body>
+    <div class="topnav  ">
+        <span id="Inicio">  <a class="active" href="">Inicio</a></span>
+        <span id=""> <a href="custom.html">Custom</a></span>
+        <span id="loaddau">  <a class="" href="#loaddau" >Inicio</a></span>
+        <span id="semana">  <a class="" href="#1" >Semana</a></span>
+
+
+    </div>
+    <footer class="fix">
+        <div id="info" class="   button2"></div>
+
+        <div id="horanow" class="   button2"></div>
+        <div id="horasim" class="   button2"></div>
+    </footer>
+
+    <div class="clase1">
+
+
+        <div class="cont" id="cont">
+
+        </div>
+
+        <div class="cont" id="cont2">
+
+        </div>
+        <div class="cont" id="cont3">
+
+        </div>
+        <div class="cont" id="cont4">
+
+        </div>
+        <div class="cont" id="cont5">
+
+        </div>
+        <div class="cont" id="cont6">
+
+        </div>
+        <div class="cont" id="cont7">
+
+        </div>
+       
+
+    </div>
+    <script type="text/javascript ">
+        document.getElementById('loaddau').onclick = dau;
+        document.getElementById('semana').onclick = sem;
+        //document.getElementById('loadsem2').onclick = semanados;
+
+        //document.getElementById('loadhora').onclick = hora;
+        // document.getElementById('Inicio').onclick = inicial;
+        function dau() {
+
+            check('lunes', 8, 16.5, 8.5, 'martes', 8, 16.5, 8.5, 'miercoles', 8, 16.5, 8.5, 'jueves', 8, 16.5, 8.5, 'viernes', 8, 15, 7, 'sabado',0,0,0,'domingo', 0,0,0);
+
+
+        }
+
+        function sem() {
+
+            check('lunes', 0, 24, 24, 'martes', 0, 24, 24, 'miercoles', 0, 24, 24, 'jueves', 0, 24, 24, 'viernes', 0, 24, 24, 'sabado', 0,24,24, 'domingo', 0,24,24);
+
+
+        }
+    </script>
+
+
+
+
+
+    <h3><span id="totalhoras "></span></h3>
+    <h3><span id="totalhoras2 "></span></h3>
+
+    <h3><span id="valorsem"></span></h3>
+    <h3> <span id="valor1"></span></h3>
+    <h3> <span id="valor3"></span></h3>
+    <h3> <span id="valor4"></span></h3>
+    <h3><span id="valorlunes "></span></h3>
+    <h3> <span id="valormartes "></span></h3>
+    <h3> <span id="valormiercoles "></span></h3>
+    <h3> <span id="valorjueves "></span></h3>
+    <h3> <span id="valorviernes "></span></h3>
+    <h3> <span id="valor4 "></span></h3>
+
+</body>
+
+
+</html>
